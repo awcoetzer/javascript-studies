@@ -23,6 +23,8 @@ If a visual example is needed, I would most likely use <a href="https://codepen.
 #### TREE & BLOBS
 ## Repository file & directory layout
 
+- [assets/](./assets/)
+  - [images/](./assets/images/)
 - [README.md](./README.md)
 
 <br>
