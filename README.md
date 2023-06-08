@@ -1,7 +1,7 @@
 #### <a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank" alt="Scrimba's website">JONAS SCHMEDTMANN | THE COMPLETE JAVASCRIPT COURSE 2023 ...
 </a> 
 
-This repository is for the Udemy course course provided by Jonas Schmedtmann.
+This repository is for the Udemy course course provided by Jonas Schmedtmann. This is to supplement the Scrimba course.
 
 <br>
 
