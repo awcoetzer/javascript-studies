@@ -1,0 +1,5 @@
+@import url('../../../assets/css/base.css');
+
+.body {
+  background: linear-gradient(to bottom right, hsla(150, 80%, 70%), hsl(180, 80%, 60%));
+}
