@@ -20,11 +20,13 @@ If a visual example is needed, I would most likely use <a href="https://codepen.
 
 <br>
 
-#### TREE & BLOBS
-## Repository file & directory layout
+#### FOLDER STRUCTURE
+## Repository files & directory layout
 
 - [assets/](./assets/)
   - [images/](./assets/images/)
+- [module-1/](./module-1/)
+- [module-2/](./module-2/)
 - [README.md](./README.md)
 
 <br>
@@ -34,10 +36,3 @@ If a visual example is needed, I would most likely use <a href="https://codepen.
 
 - Jonas Schmedtmann Course on Udemy
   - <a href="https://www.udemy.com/course/the-complete-javascript-course/">The Complete JavaScript Course 2023: From Zero to Expert!</a>
-
-<br>
-
-#### CREDITS
-## Those who worked on the project can be found below
-
-- <a href="https://github.com/awcoetzer">Andre W. Coetzer</a>
