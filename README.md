@@ -24,9 +24,10 @@ If a visual example is needed, I would most likely use <a href="https://codepen.
 ## Repository files & directory layout
 
 - [assets/](./assets/)
-  - [images/](./assets/images/)
 - [module-1/](./module-1/)
 - [module-2/](./module-2/)
+  - [assets/](./module-2/assets/)
+  - [index.html](./module-2/index.html)
 - [README.md](./README.md)
 
 <br>
