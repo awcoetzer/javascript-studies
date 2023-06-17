@@ -59,5 +59,15 @@ console.log('19' - '13' + 17);
 console.log('123' < 57);
 console.log(5 + 6 + '4' + 9 - 4 - 2);
 
-render('Truthy & Falsy')
-// LECTURE: Truthy & Falsy
+render('Equality operators')
+// LECTURE: Equality operators
+
+const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+
+if (numNeighbours === 1) {
+  console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+  console.log('More than 1 border');
+} else {
+  console.log('No borders');
+}

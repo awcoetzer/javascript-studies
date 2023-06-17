@@ -477,18 +477,58 @@ In the example above, because money is essentially a `falsy` value, it will be c
 
 ## • Equality operators
 ```javascript
-  
+  const age = 18;
+
+  if (age === 18) console.log('yay!, I am an adult!!');
+
+  // strict equality
+  18 === '18' // false
+
+  // loose equality
+  18 == '18' // true
 ```
+
+To check whether or not a value is equal to another value, we use equality operators. There is the `==` (loose equality) & `===` (strict equality) or `!=` (loose different equality) & `!==` (strict different equality).
+
+The difference between both `loose ==` and `strict ===`, is the strict equals to checks if the types are of the same type, while loose has JavaScript do type coercion and then check them.
+
+As a rule, always use the strict equality over loose, to avoid bugs in your software or applications.
+
+```javascript
+  const favoriteNum = 42;
+
+  if (favoriteNum !== 23) console.log('Why not 23?')
+```
+
+There is also the different equality operator, again it has both the loose and strict modes. The different equality operator is opposite of the equality operator.
+
 ---
 
 #### ASSIGNMENT
-
+  1. Declare a variable 'numNeighbours' based on a prompt input like this: prompt('How many neighbour countries does your country have?');
+  2. If there is only 1 neighbour, log to the console 'Only 1 border!' (use loose equality == for now)
+  3. Use an else-if block to log 'More than 1 border' in case 'numNeighbours' is greater than 1
+  4. Use an else block to log 'No borders' (this block will be executed when 'numNeighbours' is 0 or any other value)
+  5. Test the code with different values of 'numNeighbours', including 1 and 0.
+  6. Change == to ===, and test the code again, with the same values of 'numNeighbours'. Notice what happens when there is exactly 1 border! Why is this happening?
+  7. Finally, convert 'numNeighbours' to a number, and watch what happens now when you input 1
+  8. Reflect on why we should use the === operator and type conversion in this situation
 
 <details>
   <summary>Solution</summary>
 
   ```javascript
-  // LECTURE: 
+  // LECTURE: Equality operators
+
+  const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+
+  if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+  } else if (numNeighbours > 1) {
+    console.log('More than 1 border');
+  } else {
+    console.log('No borders');
+  } 
 
   ```
 </details>
