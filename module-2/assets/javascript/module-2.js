@@ -62,7 +62,8 @@ console.log(5 + 6 + '4' + 9 - 4 - 2);
 render('Equality operators')
 // LECTURE: Equality operators
 
-const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+// const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+const numNeighbours = 5;
 
 if (numNeighbours === 1) {
   console.log('Only 1 border!');
