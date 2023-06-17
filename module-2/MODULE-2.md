@@ -274,9 +274,10 @@ When it comes operators, if there was a math operation on the right hand side of
   console.log(population);
   population++;
   console.log(population);
+  population--;
 
-  const finlandPopluation = 6000000;
-  const averagePopulation = 33000000;
+  const finlandPopluation = 6;
+  const averagePopulation = 33;
   console.log(population > finlandPopluation);
   console.log(population > averagePopulation);
 
@@ -335,6 +336,7 @@ When it comes to whether or not you should just start using string literals, or 
   <summary>Solution</summary>
 
   ```javascript
+  // LECTURE: Strings & Template Literals
   const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
   ```
 </details>
@@ -371,6 +373,7 @@ The else statement is optional, it's perfectly fine to just write the if stateme
   <summary>Solution</summary>
 
   ```javascript
+  // LECTURE: Taking Decisions: if / else Statements
   if (population >= averagePopulation) {
     console.log(`${country}'s population is above average`);
   } else {
