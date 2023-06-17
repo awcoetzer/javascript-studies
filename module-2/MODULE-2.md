@@ -384,3 +384,211 @@ The else statement is optional, it's perfectly fine to just write the if stateme
 
 ---
 
+## • Type Conversion & Coercion
+
+In JavaScript we have both `type conversion` & `type coercion`. The first being an explicit or manual way of converting a one data type to another, while the latter is an implicit way of converting one data type to another, this occuring automatically.
+
+```javascript
+  const inputField = '1991';
+
+  //type conversion
+  console.log(Number(inputField)); // This converts the value to a number
+  console.log(String(23)) // This converts the number 23 to a string '23'
+
+  //type coercion
+  console.log(inputField + 18); // This results in 199118
+
+  // NaN
+  console.log(Number('Java')) // This result in NaN
+```
+
+`Type Coercion` appears when an operator is dealing with 2 different values that have different types. In this case JavaScript will will behind the scenes convert one value to match the other.
+
+With the example above, the `+` operator triggers the coercion, whenever there is a `+` operator and a number and string values, the number will **always** be converted to a string. Not all operators work this way, using `- * /` will convert strings to numbers.
+
+---
+
+#### ASSIGNMENT
+  1. Predict the result of these 5 operations without executing them:
+  - '9' - '5';
+    - 4 (number)
+  - '19' - '13' + '17';
+    - 617 (string)
+  - '19' - '13' + 17;
+    - 23 (number)
+  - '123' < 57;
+    - false (number)
+  - 5 + 6 + '4' + 9 - 4 - 2;
+    - 1143 (number)
+  2. Execute the operations to check if you were right
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: Type Conversion & Coercion
+  console.log('9' - '5'); // 4
+  console.log('19' - '13' + '17'); // '617'
+  console.log('19' - '13' + 17); // 23
+  console.log('123' < 57); // false
+  console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
+  ```
+</details>
+
+---
+
+<br>
+
+## • Truthy & Falsy Values
+```javascript
+
+```
+---
+
+#### ASSIGNMENT
+
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: 
+
+  ```
+</details>
+
+---
+
+<br>
+
+## • Equality operators
+```javascript
+
+```
+---
+
+#### ASSIGNMENT
+
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: 
+
+  ```
+</details>
+
+---
+
+<br>
+
+## • Boolean Logic
+```javascript
+
+```
+---
+
+#### ASSIGNMENT
+
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: 
+
+  ```
+</details>
+
+---
+
+<br>
+
+## • Logical Operators
+```javascript
+
+```
+---
+
+#### ASSIGNMENT
+
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: 
+
+  ```
+</details>
+
+---
+
+<br>
+
+## • The Switch Statement
+```javascript
+
+```
+---
+
+#### ASSIGNMENT
+
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: 
+
+  ```
+</details>
+
+---
+
+<br>
+
+## • Statements & Expressions
+```javascript
+
+```
+---
+
+#### ASSIGNMENT
+
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: 
+
+  ```
+</details>
+
+---
+
+<br>
+
+## • The conditional (ternary) operator
+```javascript
+
+```
+---
+
+#### ASSIGNMENT
+
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // LECTURE: 
+
+  ```
+</details>
+
+---
+
+<br>
