@@ -11,10 +11,10 @@ This repository is for the Udemy course course provided by Jonas Schmedtmann. Th
 
 #### ABOUT
 ## What is the repository all about?
-The plan with this repo is to store all my notes from this course, each module or section can be found under its own branch. The branch names follow a <a href="https://getbem.com/" alt="learn more about BEM">(BEM)</a> naming convention even though it has nothing to do with it, as its just for me to get into the habit of using <a href="https://getbem.com/" alt="learn more about BEM">(BEM)</a> naming conventions.
+The plan with this repo is to store all my notes from this course, each module or section can be found under its own `.md` file.
 
 ## What can you expect from this repository?
-All of my notes will be stored within the README.md file under each branch. I would glady make a site and place all my notes there once the course is completed. 
+All of my notes will be stored within a `.md` file under each respective folder. I would glady make a site and place all my notes there once the course is completed and I have gained insight into React. 
 
 If a visual example is needed, I would most likely use <a href="https://codepen.io/trending">CodePen</a> for quick demonstrations, and for full projects they will have their own repository with a link pointing to that repository and live version, which is either hosted here on GitHub Pages or Netlify depending on the project needs.
 
