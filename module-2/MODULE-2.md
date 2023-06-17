@@ -440,30 +440,44 @@ With the example above, the `+` operator triggers the coercion, whenever there i
 <br>
 
 ## • Truthy & Falsy Values
+
+Falsy values are not false but will convert to false is we try to convert them to a boolean. In JacaScript there are 5 falsy values:
+
+  1. The number `0`
+  2. An empty string `''`
+  3. `undefined`
+  4. `Null`
+  5. `NaN`
+
 ```javascript
-
+  console.log(Boolean(0)); // false
+  console.log(Boolean('Andre')); // true
+  console.log(Boolean('')); // false
+  let lastName;
+  console.log(Boolean(lastName)); //false
 ```
----
 
-#### ASSIGNMENT
+We can check this by using the `Boolean()` function to see whether a value is **truthy** or **falsy**. In practice, the conversion to boolean is always implicit _(**coercion**)_ rather than explicit _(**conversion**)_.
 
+The question is, when do we use this? It happens in two scenarios, first, when using `logical operators` and second in a `logical context`, for example within an if / else statement.
 
-<details>
-  <summary>Solution</summary>
+```javascript
+  const money = 0;
 
-  ```javascript
-  // LECTURE: 
+  if (money) {
+    console.log('Spend it wisely!');
+  } else {
+    console.log('get a job');
+  }
+```
 
-  ```
-</details>
-
----
+In the example above, because money is essentially a `falsy` value, it will be converted though `coercion` to a false value.
 
 <br>
 
 ## • Equality operators
 ```javascript
-
+  
 ```
 ---
 
