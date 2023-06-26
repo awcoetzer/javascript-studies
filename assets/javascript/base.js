@@ -7,15 +7,9 @@ const render = function (lesson) {
 
   const randomSym = function (length) {
     let symbolString = '';
-    const symbolsArr = [
-      '🟩', '🟦', '🟧',
-      '🟥', '🟨', '🟪',
-      '🟫'
-    ]
 
     for (let i = 0; i < length; i++) {
-      const randomNum = Math.floor(Math.random() * symbolsArr.length);
-      symbolString += symbolsArr[randomNum]
+      symbolString += '➖'
     }
     return symbolString;
   }
@@ -24,7 +18,8 @@ const render = function (lesson) {
     console.log(headingString);
     isFirstLesson = true
   } else {
-    console.log(randomSym(10));
+    console.log('')
+    console.log(randomSym(20));
     console.log(headingString);
   }
 }
