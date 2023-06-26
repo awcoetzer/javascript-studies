@@ -38,39 +38,68 @@ What is meant by **secure code** is that strict mode helps us avoid introducing 
 
 In the example above, we wrote some buggy code. Without strict mode activated, this would fail silently. However, with strict mode enabled, we can see where the error is. This feature has been updated since ES2015, but it is still good to use.
 
-
----
-
-#### ASSIGNMENT
-
-
-<details>
-  <summary>Solution</summary>
-
-  ```javascript
-  // LECTURE: Activating Strict Mode
-  ```
-</details>
-
----
-
 <br>
 
 ## • Functions
 ```javascript
+function logger () {
+  console.log('My name is Andre')
+}
 
+// calling / running / invoking
+logger(); //My name is Andre
+logger(); //My name is Andre
+logger(); //My name is Andre
 ```
+
+A function in it's most simplest of forms, is a piece of code we can reuse over and over again, a little bit like a variable. A variable holds a value, where functions hold chunks of code. In the example above, we wrote a function that logs `My name is Andre` to the console whenever we call it.
+
+There are different ways of saying that we are executing a function, those are we are either `calling, running or invoking` the function above 3 times.
+
+A function can not only repeat code as we demonstrated above, but it can also `receive` data and `return` data back. You can think of functions like machines.
+
+```javascript
+  function fruitProcessor (apples, oranges) {
+    const juice = `Fruit juice with ${apples} apples and ${oranges} oranges.`
+    return juice;
+  }
+
+  const appleJuice = fruitProcessor(5, 0);
+  console.log(appleJuice);
+
+  const appleOrangeJuice = fruitProcessor(2, 4);
+  console.log(appleOrangeJuice);
+```
+
+Above, we wrote a function to demonstrate how it receives data, known as `parameters`. The `apples` and `oranges` parameters can be thought of as special variables. They act as placeholders, so when you input values, those values will fill in the blanks.
+
+The values we pass into the function are called `arguments`. When we create the function, it has parameters, or we can create parameters for the function. However, when we invoke the function, we pass in arguments.
+
+Functions are useful for implementing "DRY" code, where "DRY" stands for "Don't Repeat Yourself."
 
 ---
 
 #### ASSIGNMENT
-
+  1. Write a function called 'describeCountry' which takes three parameters: 'country', 'population' and 'capitalCity'. Based on this input, the function returns a string with this format: 'Finland has 6 million people and its capital city is Helsinki'
+  2. Call this function 3 times, with input data for 3 different countries. Store the returned values in 3 different variables, and log them to the console
 
 <details>
   <summary>Solution</summary>
 
   ```javascript
   // LECTURE: Functions
+  function describeCountry (country, population, capitalCity) {
+    const description = `${country} has ${population} million people and it's capital city is ${capitalCity}`;
+    return description;
+  }
+
+  const bulgaria = describeCountry('Bulgaria', '6.8', 'Sofia');
+  const france = describeCountry('France', '67', 'Paris');
+  const southAfrica = describeCountry('South Africa', '59', 'Cape Town, Pretoria and Bloemfontein');
+
+  console.log(bulgaria);
+  console.log(france);
+  console.log(southAfrica);
   ```
 </details>
 

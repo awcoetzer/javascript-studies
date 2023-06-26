@@ -8,8 +8,22 @@ render('Activating Strict Mode')
 render('Functions')
 // LECTURE: Functions
 
+function describeCountry (country, population, capitalCity) {
+  const description = `${country} has ${population} million people and it's capital city is ${capitalCity}`;
+  return description;
+}
+
+const bulgaria = describeCountry('Bulgaria', '6.8', 'Sofia');
+const france = describeCountry('France', '67', 'Paris');
+const southAfrica = describeCountry('South Africa', '59', 'Cape Town, Pretoria and Bloemfontein');
+
+console.log(bulgaria);
+console.log(france);
+console.log(southAfrica);
+
 render('Function Declarations vs. Expressions')
 // LECTURE: Function Declarations vs. Expressions
+
 
 render('Arrow Functions')
 // LECTURE: Arrow Functions
