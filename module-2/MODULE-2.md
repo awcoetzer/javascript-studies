@@ -751,22 +751,36 @@ It's important to know the difference because certain things such as `string tem
 
 ## • The conditional (ternary) operator
 ```javascript
+  let age = 18;
+  age >= 18 ? console.log('I enjoy drinking wine') : console.log('I enjoy drinking water');
 
+  const ageLimit = age >= 18 ? 'above' : 'below'
+  const drink = age >= 18 ? 'wine' : 'water';
+  console.log(`I am ${ageLimit} the age limit and enjoy drinking ${drink}`)
 ```
+
+The `conditional operator` all allows to write a if / else statement but all in one line. It's also known as the `ternary operator` because it has three parts, the condition, the if part and the mandatory else part.
+
+The `conditional (ternary) operator` produces a value which means it can seen as an `expression` and NOT a statement. This also means we can use this in a `string template literal` or store it inside a `variable`.
+
+A `ternary operator` is perfect for a quick decision and not a means of replaced for an if / else statement.
+
 ---
 
 #### ASSIGNMENT
-
+  1. If your country's population is greater than 33 million, use the ternary operator to log a string like this to the console: 'Portugal's population is above average'. 
+  Otherwise, simply log 'Portugal's population is below average'. Notice how only one word changes between these two sentences!
+  2. After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original
 
 <details>
   <summary>Solution</summary>
 
   ```javascript
   // LECTURE: 
+  const isAboveOrBelowAverage = population > averagePopulation ? 'above' : 'below';
 
+  console.log(`${country}'s population is ${isAboveOrBelowAverage} average`);
   ```
 </details>
 
 ---
-
-<br>

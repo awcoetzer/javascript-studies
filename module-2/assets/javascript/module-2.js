@@ -111,3 +111,7 @@ render('Statements & Expressions');
 
 render('The conditional (ternary) operator');
 // LECTURE: The conditional (ternary) operator
+const isAboveOrBelowAverage = population > averagePopulation ? 'above' : 'below';
+
+console.log(`${country}'s population is ${isAboveOrBelowAverage} average`);
+
