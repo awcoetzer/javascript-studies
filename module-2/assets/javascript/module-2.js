@@ -1,6 +1,6 @@
 'use strict';
 
-import { isFirstLesson, render } from "../../../assets/javascript/base.js";
+import { isFirstLesson, render } from "../../../assets/javascript/console-output.js";
 
 render('Values and Variables')
 // LECTURE: Values and Variables
