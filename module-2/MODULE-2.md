@@ -81,7 +81,7 @@ We can reuse the variable across our file, with the benefit of only changing its
 
 Variables do follow certain naming conventions, for example not using reserved keywords in JavaScript, or starting it with a number, or using all capital letters when declaring a variable, among other things.
 
-Also, camel casing is the standard used within JavaScript, you can use snake casing though that is more comman with Ruby developers.
+Also, camel casing is the standard used within JavaScript, you can use snake casing though that is more common with Ruby developers.
 
 ---
 
@@ -111,13 +111,13 @@ Also, camel casing is the standard used within JavaScript, you can use snake cas
   const stringDataType = 'characters';
   const numberDataType = 3.1415;
   const booleanDataType = true;
-  const undefindedDataType;
+  const undefinedDataType;
   const nullDataType = null;
 ```
 
 Values can have different types, in JavaScript a value is either a **primitive** or an **object**.
 
-There are seven **primitive** data types, *String*, *Number*, *Boolean*, *Undefined*, *Null*, *Symbol* and *BigInt*. Numbers, are used for both decimal and intergers. A string is used for characters. Booleans is what is known as a logical type and can only hold one of two values, that being **true** or **false**.
+There are seven **primitive** data types, *String*, *Number*, *Boolean*, *Undefined*, *Null*, *Symbol* and *BigInt*. Numbers, are used for both decimal and integers. A string is used for characters. Booleans is what is known as a logical type and can only hold one of two values, that being **true** or **false**.
 
 Undefined is a value taken by a variable not yet defined, while Null is a undefined value set by you, the coder. Symbols are newer, and are used to denote a unique value and cannot be changed. BigInt is for numbers larger than what the number type can handle.
 
@@ -129,7 +129,7 @@ randomInput = true; // this is known as reassigning a variable
 console.log(randomInfo)
 ```
 
-On this note, JavaScript is *dynamically* typed, meaning you dont need to define the data type when declaring a variable, the value is what holds the data type. We can also reassign a different value with a different data type to the same variable later in our code.
+On this note, JavaScript is *dynamically* typed, meaning you don't need to define the data type when declaring a variable, the value is what holds the data type. We can also reassign a different value with a different data type to the same variable later in our code.
 
 ```javascript
   // the typeof operator
@@ -142,8 +142,8 @@ On this note, JavaScript is *dynamically* typed, meaning you dont need to define
   const booleanDataType = true;
   console.log(typeof booleanDataType) // boolean
 
-  const undefindedDataType;
-  console.log(typeof undefindedDataType) // undefined
+  const undefinedDataType;
+  console.log(typeof undefinedDataType) // undefined
 
   const nullDataType = null;
   console.log(typeof nullDataType) // null
@@ -247,9 +247,9 @@ console.log(ageAndre > ageBob) // < > <= >=
 
 We saw the `typeof` operator, but JavaScript has *mathematical* operators, *assignment* operators, *comparison* operators and *equality* operators. 
 
-Assignment operators, have what is known as an incrementer `x++` and decrementer `x--` operator, these add or subtract 1 to whatever number value there is.
+Assignment operators, have what is known as an increment `x++` and decrement `x--` operator, these add or subtract 1 to whatever number value there is.
 
-Comparison operators return a true or false value, either something is greather than `>` or greater than or equals to `>=` a specific value. Vice versa with less than.
+Comparison operators return a true or false value, either something is greater than `>` or greater than or equals to `>=` a specific value. Vice versa with less than.
 
 When it comes operators, if there was a math operation on the right hand side of the assignment operator, why does the math operation happen first before the assignment and this is something die to operator precedence.
 
@@ -276,7 +276,7 @@ When it comes operators, if there was a math operation on the right hand side of
   console.log(population);
   population--;
 
-  const finlandPopluation = 6;
+  const finlandPopulation = 6;
   const averagePopulation = 33;
   console.log(population > finlandPopluation);
   console.log(population > averagePopulation);
@@ -311,7 +311,7 @@ To keep things short, certain operators have higher precedence over others, not 
   const now = 2023;
 
   // string concatenation
-  const andreConcatention = "I'm" + " " + firstName + " " + ...
+  const andreConcatenation = "I'm" + " " + firstName + " " + ...
 
   // string template literals
   const andreStringLiteral = `
@@ -320,11 +320,11 @@ To keep things short, certain operators have higher precedence over others, not 
   `
 ```
 
-With `string template literals` we no longer need to concat strings. Instead of wrapping our strings in normal quotes we use backticks / backquotes / tilda keys ( ` ) to wrap the string. We then place what is known as a placeholder **${ ... }** with anything inside being treated as JavaScript and the outside as a string. 
+With `string template literals` we no longer need to concat strings. Instead of wrapping our strings in normal quotes we use backticks / back quotes / tilde keys ( ` ) to wrap the string. We then place what is known as a placeholder **${ ... }** with anything inside being treated as JavaScript and the outside as a string. 
 
-String template literals also allow us to very easyily make multiline strings, where as with normal quotes we would have use regular expressions, such as `\n` to escape a line.
+String template literals also allow us to very easily make multiline strings, where as with normal quotes we would have use regular expressions, such as `\n` to escape a line.
 
-When it comes to whether or not you should just start using string literals, or a mix of both, itreally depends on your style.
+When it comes to whether or not you should just start using string literals, or a mix of both, literally depends on your style.
 
 ---
 
@@ -357,7 +357,7 @@ When it comes to whether or not you should just start using string literals, or 
   }
 ```
 
-The if / else statement is also known as a control structure, essentially instead of JavaScript execuing line by line, we now have control over which code to run. We no have access to decision making.
+The if / else statement is also known as a control structure, essentially instead of JavaScript executing line by line, we now have control over which code to run. We no have access to decision making.
 
 Within the parenthesis takes in an expression that returns a boolean value. Depending on the desired outcome, that particular code block will run. A code block is `{ ... }` these curly braces, whatever is inside of these curly braces will be the code that runs.
 
@@ -386,7 +386,7 @@ The else statement is optional, it's perfectly fine to just write the if stateme
 
 ## • Type Conversion & Coercion
 
-In JavaScript we have both `type conversion` & `type coercion`. The first being an explicit or manual way of converting a one data type to another, while the latter is an implicit way of converting one data type to another, this occuring automatically.
+In JavaScript we have both `type conversion` & `type coercion`. The first being an explicit or manual way of converting a one data type to another, while the latter is an implicit way of converting one data type to another, this occurring automatically.
 
 ```javascript
   const inputField = '1991';
@@ -441,7 +441,7 @@ With the example above, the `+` operator triggers the coercion, whenever there i
 
 ## • Truthy & Falsy Values
 
-Falsy values are not false but will convert to false is we try to convert them to a boolean. In JacaScript there are 5 falsy values:
+Falsy values are not false but will convert to false is we try to convert them to a boolean. In JavaScript there are 5 falsy values:
 
   1. The number `0`
   2. An empty string `''`
@@ -539,11 +539,11 @@ There is also the different equality operator, again it has both the loose and s
 
 ## • Boolean Logic
 
-Boolean logic is a branch of computer science, that uses a combination of true and false values toreceive an outcome, in order to do this it uses several logical operators much the same way as mathematical operators is  used to combine numeric values.
+Boolean logic is a branch of computer science, that uses a combination of true and false values to receive an outcome, in order to do this it uses several logical operators much the same way as mathematical operators is  used to combine numeric values.
 
 For now we only will be talking about the `AND`, `OR` and `NOT` logical operators.
 
-##### SENARIO
+##### SCENARIO
   1. Sarah has a drivers license.
   2. Sarah has good vision
 
@@ -560,7 +560,7 @@ For now we only will be talking about the `AND`, `OR` and `NOT` logical operator
 
 Sarah has a drivers license `&&` Sarah has good vision. Taking a look at what we call the truth table, we can see that both SENARIO 1 `&&` 2 need to be true, in order for the expression to be true. 
 
-This can be done with more than just SENARIO 1 `&&` 2, we could add 3 `&&` 4 `&&` 5 ... as many as we like, though they all need to equate to true in order to be return true. I either one is false then the entire expression equates to false.
+This can be done with more than just SCENARIO 1 `&&` 2, we could add 3 `&&` 4 `&&` 5 ... as many as we like, though they all need to equate to true in order to be return true. I either one is false then the entire expression equates to false.
 
 #### THE 'OR' OPERATOR | `||`
 
@@ -577,7 +577,7 @@ Sarah has a drivers license `||` Sarah has good vision. The `OR` logical operato
 
 #### THE 'NOT' OPERATOR | `!`
 
-The `!` logical operator simply reverses the expressions outcome, the `!` operator has precedance over other logical operators.
+The `!` logical operator simply reverses the expressions outcome, the `!` operator has precedence over other logical operators.
 
 ---
 
@@ -732,21 +732,18 @@ A `Switch Statement` is an alternative way of writing an if statement, when all 
 
 ## • Statements & Expressions
 ```javascript
+  3 + 4 // this is an expression
+  1991 // this is also an expression
+
+  if (23 > 10) {
+    console.log('23 is bigger'); // this is a statement
+  } // this is a statement
 
 ```
----
 
-#### ASSIGNMENT
+A `expression` is a piece of code that produces a value. A `statement` is simply a sequence of actions, it doesn't produce a value.
 
-
-<details>
-  <summary>Solution</summary>
-
-  ```javascript
-  // LECTURE: 
-
-  ```
-</details>
+It's important to know the difference because certain things such as `string template literals` expect an `expression` over a `statement`
 
 ---
 

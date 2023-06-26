@@ -31,9 +31,9 @@ population++;
 console.log(population);
 population--;
 
-const finlandPopluation = 6;
+const finlandPopulation = 6;
 const averagePopulation = 33;
-console.log(population > finlandPopluation);
+console.log(population > finlandPopulation);
 console.log(population > averagePopulation);
 
 // const description = 'Bulgaria is in Europe, and its 6.8 million people speak Bulgarian';
@@ -87,7 +87,7 @@ render('The Switch Statement');
 
 switch (language) {
   case 'chinese':
-  case 'manderin':
+  case 'mandarin':
     console.log('MOST number of native speakers!');
     break;
   case 'spanish':
