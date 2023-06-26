@@ -59,7 +59,7 @@ console.log('19' - '13' + 17);
 console.log('123' < 57);
 console.log(5 + 6 + '4' + 9 - 4 - 2);
 
-render('Equality operators')
+render('Equality operators');
 // LECTURE: Equality operators
 
 // const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
@@ -72,3 +72,42 @@ if (numNeighbours === 1) {
 } else {
   console.log('No borders');
 }
+
+render('Logical Operators');
+// LECTURE: Logical Operators
+
+if (language === 'English' && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not meet your criteria :(`);
+}
+
+render('The Switch Statement');
+// LECTURE: The Switch Statement
+
+switch (language) {
+  case 'chinese':
+  case 'manderin':
+    console.log('MOST number of native speakers!');
+    break;
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'hindi':
+    console.log('Number 4');
+    break;
+  case 'arabic':
+    console.log('5th most spoken language');
+    break;
+  default:
+    console.log('Great language too :D');
+}
+
+render('Statements & Expressions');
+// LECTURE: Statements & Expressions
+
+render('The conditional (ternary) operator');
+// LECTURE: The conditional (ternary) operator

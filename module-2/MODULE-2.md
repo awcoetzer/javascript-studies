@@ -584,20 +584,71 @@ The `!` logical operator simply reverses the expressions outcome, the `!` operat
 <br>
 
 ## • Logical Operators
-```javascript
 
+In this lesson we will be looking at a more practical example of `Boolean Logic` and `Logical Operators` using the senario laid out above with Sarah.
+
+```javascript
+  let hasDriversLicense;
+  let hasGoodVision;
+  let isTired;
+
+  hasDriversLicense = true;
+  hasGoodVision = true;
+  console.log(hasDriversLicense && hasGoodVision); //true
+
+  hasDriversLicense = true;
+  hasGoodVision = false;
+  console.log(hasDriversLicense || hasGoodVision); //true
+
+  hasDriversLicense = true;
+  console.log(!hasDriversLicense); //false
+
+  hasDriversLicense = true;
+  hasGoodVision = true;
+  if (hasDriversLicense && hasGoodVision) {
+    console.log('Both are true, so Sarah can drive 🙂'); //This will execute
+  } else {
+    console.log('Someone else should drive!');
+  }
+
+  hasDriversLicense = true;
+  hasGoodVision = false;
+  if (hasDriversLicense || hasGoodVision) {
+    console.log('One is true, so Sarah can drive 🙂'); //This will execute
+  } else {
+    console.log('Someone else should drive!');
+  }
+
+  hasDriversLicense = true;
+  hasGoodVision = true;
+  isTired = true;
+
+  if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Both are true, so Sarah can drive 🙂');
+  } else {
+    console.log('Someone else should drive!'); //This will execute
+  }
 ```
 ---
 
 #### ASSIGNMENT
-
+  1. Comment out the previous code so the prompt doesn't get in the way
+  2. Let's say Sarah is looking for a new country to live in. She wants to live in a country that speaks english, has less than 50 million people and is not an 
+  island.
+  3. Write an if statement to help Sarah figure out if your country is right for her. You will need to write a condition that accounts for all of Sarah's criteria. Take your time with this, and check part of the solution if necessary.
+  4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If not, log 'Portugal does not meet your criteria :('
+  5. Probably your country does not meet all the criteria. So go back and temporarily change some variables in order to make the condition true (unless you live in Canada :D)
 
 <details>
   <summary>Solution</summary>
 
   ```javascript
-  // LECTURE: 
-
+  // LECTURE: Logical Operators
+  if (language === 'English' && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not meet your criteria :(`); //This is the result
+}
   ```
 </details>
 
@@ -607,19 +658,71 @@ The `!` logical operator simply reverses the expressions outcome, the `!` operat
 
 ## • The Switch Statement
 ```javascript
+  const day = 'thursday';
 
+  switch (day) {
+    case 'monday':
+      console.log('Today is Monday');
+      break;
+      case 'tuesday':
+        console.log('Today is Tuesday');
+        break;
+    case 'wednesday':
+      console.log('Today is the middle of the week');
+      break;
+    case 'thursday':
+      console.log('It\'s almost Friday');
+      break;
+    case 'friday':
+    case 'saturday':
+    case 'sunday':
+      console.log('Its the weekend!!!');
+      break;
+    default:
+      console.log('Day not recognized');
+  }
 ```
+
+A `Switch Statement` is an alternative way of writing an if statement, when all we one to do is compare one value to multiple different operators. A good if example would be to see the same usuage of the variable `day` in an if statement.
+
 ---
 
 #### ASSIGNMENT
-
+  1. Use a switch statement to log the following string for the given 'language':
+  
+  - chinese or mandarin: 'MOST number of native speakers!'
+  - spanish: '2nd place in number of native speakers'
+  - english: '3rd place'
+  - hindi: 'Number 4'
+  - arabic: '5th most spoken language'
+  - for all other simply log 'Great language too :D'
 
 <details>
   <summary>Solution</summary>
 
   ```javascript
-  // LECTURE: 
-
+  // LECTURE: The Switch Statement
+  
+  switch (language) {
+    case 'chinese':
+    case 'manderin':
+      console.log('MOST number of native speakers!');
+      break;
+    case 'spanish':
+      console.log('2nd place in number of native speakers');
+      break;
+    case 'english':
+      console.log('3rd place');
+      break;
+    case 'hindi':
+      console.log('Number 4');
+      break;
+    case 'arabic':
+      console.log('5th most spoken language');
+      break;
+    default:
+      console.log('Great language too :D');
+  }
   ```
 </details>
 
