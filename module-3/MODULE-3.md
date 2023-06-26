@@ -14,8 +14,30 @@ Welcome to module 3, JavaScript fundamentals part 2.
 
 ## • Activating Strict Mode
 ```javascript
+// activating strict mode
+'use strict';
 
+// Bugged code
+const hasDriversLicense = false;
+const hasPassedTest = true;
+
+if (hasPassedTest) hasDriverLicense = true; // we omitted the 's'
+if (hasDriversLicense) console.log('Just got drivers license')
 ```
+
+**Strict mode** is a way for us to write secure JavaScript code. All we have to do to activate strict mode is to write `"'use strict';"`.  
+This line of code must come before anything else in the file.
+
+What is meant by **secure code** is that strict mode helps us avoid introducing bugs into our code in two ways. First, strict mode forbids us from doing certain things, and it also creates visible errors when something goes wrong. Otherwise, JavaScript would fail silently, and we would not know why.
+
+##### **MORE INFO FROM MDN**
+
+1. Strict mode eliminates some JavaScript **silent errors** by changing them to **throw errors**.
+2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not in strict mode.
+3. Prohibits some syntax likely to be defined in future versions of ECMAScript.
+
+In the example above, we wrote some buggy code. Without strict mode activated, this would fail silently. However, with strict mode enabled, we can see where the error is. This feature has been updated since ES2015, but it is still good to use.
+
 
 ---
 
