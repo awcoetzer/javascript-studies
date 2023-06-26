@@ -109,19 +109,67 @@ Functions are useful for implementing "DRY" code, where "DRY" stands for "Don't 
 
 ## • Function Declarations vs. Expressions
 ```javascript
+// function declaration
+function calcAgeOne (birthYear) {
+  return 2023 - birthYear;
+}
+
+const ageOne = calcAgeOne(1981);
+
+// function expressions
+const calcAgeOne = function (birthYear) {
+  return 2023 - birthYear;
+}
+
+const ageTwo = calcAgeTwo(1981);
+
+console.log(ageOne, ageTwo);
 
 ```
+
+In JavaScript, there are different ways to write functions, and each way works in a slightly different manner. The function shown in the last lesson is known as a function declaration. We use the function keyword to declare the function.
+
+There is also `function expressions`, where we save a function to a variable. This is because functions are just expressions; they produce a value. This allows us to save an `anonymous` function to a variable. Notice that with function expressions, we do not follow the function keyword with a name; the name is associated with the variable. We call these functions in the exact same way.
+
+The difference between the two is that function declarations are `hoisted`, meaning we can invoke our function before even declaring it. It's a matter of personal preference as to which approach to use.
+
 
 ---
 
 #### ASSIGNMENT
-
+  1. The world population is 7900 million people. Create a function declaration called 'percentageOfWorld1' which receives a 'population' value, and returns the percentage of the world population that the given population represents. For example, China has 1441 million people, so it's about 18.2% of the world population
+  2. To calculate the percentage, divide the given 'population' value by 7900 and then multiply by 100
+  3. Call 'percentageOfWorld1' for 3 populations of countries of your choice, store the results into variables, and log them to the console
+  4. Create a function expression which does the exact same thing, called 'percentageOfWorld2', and also call it with 3 country populations (can be the same populations)
 
 <details>
   <summary>Solution</summary>
 
   ```javascript
   // LECTURE: Function Declarations vs. Expressions
+  // function declarations
+  function percentageOfWorldOne (population) {
+    const worldPopulation = 7900;
+    return population / worldPopulation * 100;
+  }
+
+  const germanyOne = percentageOfWorldOne(83);
+  const usaOne = percentageOfWorldOne(331);
+  const indiaOne = percentageOfWorldOne(1408);
+
+  console.log(germanyOne.toFixed(1), usaOne.toFixed(1), indiaOne.toFixed(1));
+
+  // function expressions
+  const percentageOfWorldTwo = function (population) {
+    const worldPopulation = 7900;
+    return population / worldPopulation * 100;
+  }
+
+  const germanyTwo = percentageOfWorldTwo(83);
+  const usaTwo = percentageOfWorldTwo(331);
+  const indiaTwo = percentageOfWorldTwo(1408);
+
+  console.log(germanyTwo.toFixed(1), usaTwo.toFixed(1), indiaTwo.toFixed(1));
   ```
 </details>
 

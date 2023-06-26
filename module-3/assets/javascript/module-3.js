@@ -23,7 +23,29 @@ console.log(southAfrica);
 
 render('Function Declarations vs. Expressions')
 // LECTURE: Function Declarations vs. Expressions
+// function declarations
+function percentageOfWorldOne (population) {
+  const worldPopulation = 7900;
+  return population / worldPopulation * 100;
+}
 
+const germanyOne = percentageOfWorldOne(83);
+const usaOne = percentageOfWorldOne(331);
+const indiaOne = percentageOfWorldOne(1408);
+
+console.log(germanyOne.toFixed(1), usaOne.toFixed(1), indiaOne.toFixed(1));
+
+// function expressions
+const percentageOfWorldTwo = function (population) {
+  const worldPopulation = 7900;
+  return population / worldPopulation * 100;
+}
+
+const germanyTwo = percentageOfWorldTwo(83);
+const usaTwo = percentageOfWorldTwo(331);
+const indiaTwo = percentageOfWorldTwo(1408);
+
+console.log(germanyTwo.toFixed(1), usaTwo.toFixed(1), indiaTwo.toFixed(1));
 
 render('Arrow Functions')
 // LECTURE: Arrow Functions
