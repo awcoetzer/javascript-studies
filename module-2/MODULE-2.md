@@ -538,22 +538,46 @@ There is also the different equality operator, again it has both the loose and s
 <br>
 
 ## • Boolean Logic
-```javascript
 
-```
----
+Boolean logic is a branch of computer science, that uses a combination of true and false values toreceive an outcome, in order to do this it uses several logical operators much the same way as mathematical operators is  used to combine numeric values.
 
-#### ASSIGNMENT
+For now we only will be talking about the `AND`, `OR` and `NOT` logical operators.
 
+##### SENARIO
+  1. Sarah has a drivers license.
+  2. Sarah has good vision
 
-<details>
-  <summary>Solution</summary>
+#### THE 'AND' OPERATOR | `&&`
 
-  ```javascript
-  // LECTURE: 
+<br>
 
-  ```
-</details>
+##### _THE TRUTH TABLE: AND_
+
+|AND    |TRUE   |FALSE  |
+|:---:  |:---:  |:---:  |
+|TRUE   |`TRUE` |FALSE  |
+|FALSE  |FALSE  |FALSE  |
+
+Sarah has a drivers license `&&` Sarah has good vision. Taking a look at what we call the truth table, we can see that both SENARIO 1 `&&` 2 need to be true, in order for the expression to be true. 
+
+This can be done with more than just SENARIO 1 `&&` 2, we could add 3 `&&` 4 `&&` 5 ... as many as we like, though they all need to equate to true in order to be return true. I either one is false then the entire expression equates to false.
+
+#### THE 'OR' OPERATOR | `||`
+
+<br>
+
+##### _THE TRUTH TABLE: OR_
+
+|OR    |TRUE   |FALSE  |
+|:---:  |:---:  |:---:  |
+|TRUE   |`TRUE` |`TRUE` |
+|FALSE  |`TRUE` |FALSE  |
+
+Sarah has a drivers license `||` Sarah has good vision. The `OR` logical operator states that whenever one of the values is true the entire expression equates to true, however if both values is false the expression equates to false. We can see this represented within the truth table.
+
+#### THE 'NOT' OPERATOR | `!`
+
+The `!` logical operator simply reverses the expressions outcome, the `!` operator has precedance over other logical operators.
 
 ---
 
