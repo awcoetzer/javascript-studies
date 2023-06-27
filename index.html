@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This website is for my personal notes on the Udemy course provided by Jonas Schmedtmann, the complete javascript course 2023">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Andre's JavaScript Studies</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+
+<body>
+  <!-- mobile button -->
+  <div class="mobile-nav-box">
+    <button class="mobile-nav-btn">
+      <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+    </button>
+  </div>
+  
+  <header class="sidebar">
+    <div class="container--sidebar">
+      <!-- user image -->
+      <a href="https://github.com/awcoetzer" target="_blank" class="user-img-link">
+        <picture class="user-img-box">
+          <img src="https://avatars.githubusercontent.com/u/83278375?s=400&u=e0e619c23ed8ffa493ca3c5aa82d7cc63ad47d9d&v=4"
+            alt="" class="user-img">
+        </picture>
+      </a>
+    </div>
+
+    <!-- username -->
+    <div class="username">
+      <div class="container--sidebar">
+        <div class="username-box">
+          <span class="username-text">
+            Andre W. Coetzer
+          </span>
+          <span class="job-text">
+            Frontend Engineer
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- social links -->
+    <div class="social-links">
+      <div class="container--sidebar">
+        <div class="social-link-box">
+          <a href="" class="link link--social">
+            <ion-icon name="logo-github" class="social-icon github-icon"></ion-icon>
+          </a>
+          
+          <a href="" class="link link--social">
+            <ion-icon name="logo-twitter" class="social-icon twitter-icon"></ion-icon>
+          </a>
+          
+          <a href="" class="link link--social">
+            <ion-icon name="logo-linkedin" class="social-icon linkedin-icon"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- main navigation -->
+    <div class="navigation-box">
+        <nav class="nav--main">
+          <ul class="nav--main-list">
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+              
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Module 1 -->
+            <li class="nav--main-item">
+              <a href="#home" class="nav--main-link">
+                <div class="nav-main--link-header">
+                  <span class="pre-heading">
+                    Module &mdash; 1
+                  </span>
+                  <div class="nav--main-link-icon-box">
+                    <ion-icon name="chevron-back" class="nav--main-link-icon"></ion-icon>
+                  </div>
+                </div>
+                <span class="nav-main--title">
+                  Welcome, Welcome, Welcome
+                </span>
+              </a>
+            
+              <!-- sub list -->
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Course Structure & Projects
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Read before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Watch before you start
+                    </span>
+                  </a>
+                </li>
+            
+                <li class="sub-item">
+                  <a href="" class="sub-link">
+                    <span class="sub-title">
+                      Setting up our code editor
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+          </ul>
+        </nav>
+    </div>
+   
+    <!-- settings box -->
+    <div class="settings-box">
+      <div class="container--sidebar">
+
+        <div class="settings-box--wrapper flex flex-direction--row">
+          <p class="copyright"> &copy; Copyright <span class="date">date here</span></p>
+          <button class="btn--theme">
+            <ion-icon name="moon" class="theme-icon"></ion-icon>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section-padding section-hero">
+      <div class="container container--hero">
+        <div class="hero">
+          <span class="pre-heading">Module &mdash; 1</span>
+          <h1 class="heading-primary">
+            Welcome to my notes for, The complete JavaScript course 2023
+          </h1>
+          <p class="hero-text">
+            Welcome to module 1, the introduction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding section-lesson">
+      <div class="container">
+        <span class="pre-heading">Course Structure & Projects</span>
+        <h2 class="heading-secondary">
+          Module &mdash; 1 Notes
+        </h2>
+        <p class="lesson-notes">
+          Module 1 just welcomes you to the course, gives a deailed overview of what will be covered within the course
+          and
+          provieds some helpful links to the courses repository <a
+            href="https://github.com/jonasschmedtmann/complete-javascript-course" target="_blank"
+            alt="this links to the courses repo and not my repo" class="link link--lesson">here</a>.
+          Check out the course to gain the download link to the course exercises.
+        </p>
+
+        <p class="lesson-notes">
+          Thats about it for this module
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
