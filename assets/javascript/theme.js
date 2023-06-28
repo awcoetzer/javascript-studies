@@ -65,7 +65,7 @@ const changeTheme = function () {
 }
 
 // event listeners
-themeBtn.addEventListener('click', changeTheme)
+// themeBtn.addEventListener('click', changeTheme)
 
 // init function
 const init = function () {
